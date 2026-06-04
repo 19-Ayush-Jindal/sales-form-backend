@@ -241,7 +241,7 @@ import {
     addBuyer,
     addSale
 }
-from "./googleSheets.js";
+from "./googlesheets.js";
 
 const app = express();
 
@@ -481,17 +481,7 @@ app.post(
     }
     
 );
-app.post("/api/sales", async (req, res) => {
 
-    console.log("SAVE SALE HIT");
-
-    console.log(req.body);
-
-    res.json({
-        success: true
-    });
-
-});
 
 const PORT = process.env.PORT || 3001;
 
