@@ -12,8 +12,7 @@ const sheets = google.sheets({
     auth
 });
 
-const SPREADSHEET_ID =
-    "17zhXMEve87Semh7SphFPAgIBhO04dgS_apaU-l9iFoE";
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 
 async function getSheet(sheetName) {
 
