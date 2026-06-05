@@ -248,7 +248,7 @@ const app = express();
 app.use(
     cors({
         origin: [
-            "https://your-frontend.vercel.app"
+            "https://sales-form-frontend-alpha.vercel.app"
         ]
     })
 );
