@@ -443,12 +443,14 @@ app.post(
             sale.date,
 
             sale.buyerName,
-            sale.saleType,
+            
             item.product,
 
             item.quantity,
 
             item.price,
+
+            sale.saleType,
 
             sale.remarks || ""
 
