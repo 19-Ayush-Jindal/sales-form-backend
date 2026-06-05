@@ -245,7 +245,13 @@ from "./googlesheets.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+    cors({
+        origin: [
+            "https://your-frontend.vercel.app"
+        ]
+    })
+);
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -433,7 +439,7 @@ app.post(
             const rows =
     sale.items.map(
         item => [
-
+            sale.salesid,
             sale.date,
 
             sale.buyerName,
